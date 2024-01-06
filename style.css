@@ -1,0 +1,279 @@
+/* Global Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #fff;
+    /* White background for the entire body */
+}
+
+
+/* Header Styles */
+
+header {
+    position: relative;
+    height: 80px;
+    background-color: #e75480;
+    /* Pink background color for header */
+    color: #fff;
+    /* White text color for header */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header .header-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+header .header-logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+header .header-logo .logo {
+    margin-right: 10px;
+    /* Adjust as needed */
+}
+
+header .header-logo .brand-name {
+    font-size: 18px;
+    /* Adjust as needed */
+    font-weight: bold;
+}
+
+
+/* Navigation Styles */
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e75480;
+    padding: 10px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #ffcccb;
+    /* Lighter pink on hover */
+}
+
+
+/* Banner Styles */
+
+.banner {
+    height: 500px;
+    background-image: url('resources/img/bwc.jpg');
+    /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-size: cover;
+    background-position: center;
+    color: #f694bdf7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.banner h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+
+/* Additional Styles for Title Bar */
+
+.title-bar {
+    background-color: pink;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo-container {
+    flex: 1;
+}
+
+.logo {
+    width: 100px;
+    /* Adjust the width as needed */
+    height: auto;
+}
+
+.menu-toggle {
+    display: none;
+    /* Initially hide on larger screens */
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+
+/* Add responsive styles to show the menu on small screens */
+
+@media screen and (max-width: 768px) {
+    header nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #e75480;
+        /* Pink background color for mobile nav */
+    }
+    header nav.show {
+        display: flex;
+    }
+    header .menu-toggle {
+        display: flex;
+    }
+    header .bar {
+        background-color: #fff;
+        /* White bar color for the menu toggle in mobile */
+    }
+}
+
+
+/* Speciality Styles */
+
+.speciality-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #fff;
+    /* White background color for better text visibility */
+}
+
+.speciality-item {
+    text-align: center;
+    margin: 15px;
+    flex-basis: calc(33.33% - 30px);
+    /* Adjusted flex-basis to achieve three items in one row */
+}
+
+.speciality-item img {
+    width: 80px;
+    /* Adjust the width as needed */
+    height: 80px;
+    /* Adjust the height as needed */
+    margin-bottom: 10px;
+}
+
+
+/* Media Query for responsiveness */
+
+@media screen and (max-width: 768px) {
+    .speciality-wrapper {
+        padding: 10px;
+    }
+    .speciality-item {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+
+/* Services Wrapper Styles */
+
+.services-wrapper {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
+}
+
+
+/* Our Services Header Styles */
+
+.our-services-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+/* Services List Styles */
+
+.services-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.services-list li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+
+/* Footer Styles */
+
+.footer-wrapper {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    /* margin-top: 150px; */
+    background-image: url('resources/img/lower_footer.jpg');
+    background-size: cover;
+    /* Adjust this property */
+    background-position: center center;
+    /* Adjust this property */
+    background-repeat: no-repeat;
+    /* Adjust this property */
+    color: #fff;
+    /* Adjust the text color for better visibility */
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-details,
+.hours-info {
+    flex: 0 0 calc(50% - 10px);
+}
+
+.hours-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hours-info li {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #e5eaec;
+    /* Adjust the color as needed */
+}

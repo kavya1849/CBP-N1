@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAY Beauty Point</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-logo">
+            <a href="/">
+                <img class="logo" src="resources/img/CBP.png" alt="Cay Beauty Logo" title="Cay Beauty">
+                <span class="brand-name">Cay Beauty Point</span>
+            </a>
+        </div>
+
+
+        <nav class="main-nav">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <div class="banner">
+        <h1>BEAUTY WITH A CONSCIENCE</h1>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('header nav');
+            menu.classList.toggle('show');
+        }
+    </script>
+
+    <!-- Speciality Section -->
+    <div class="speciality-wrapper">
+        <div class="speciality-item">
+            <img src="resources/img/hydra.png" alt="Hydra Facial Logo">
+            <p>Hydra Facial</p>
+        </div>
+        <div class="speciality-item">
+            <img src="resources/img/Screenshot.png" alt="LED Mask Logo">
+            <p>LED MASK</p>
+        </div>
+        <div class="speciality-item">
+            <img src="resources/img/skin scrubber.png" alt="Skin Scrubber Logo">
+            <p>SKIN SCRUBBER</p>
+        </div>
+
+        <div class="speciality-item">
+            <img src="resources/img/PRODUCTSPrayer.png" alt="Product Sprayer Logo">
+            <p>PRODUCT SPRAYER</p>
+        </div>
+        <div class="speciality-item">
+            <img src="resources/img/vibration_prob.png" alt="Vibration Probe Logo">
+            <p>VIBRATION PROBE</p>
+        </div>
+        <div class="speciality-item">
+            <img src="resources/img/cold hammer.png" alt="Cold Hammer Logo">
+            <p>COLD HAMMER</p>
+        </div>
+
+        <div class="speciality-item">
+            <img src="resources/img/blacjhead.png" alt="Blackhead Cleaning Logo">
+            <p>BLACKHEAD CLEANING</p>
+        </div>
+        <div class="speciality-item">
+            <img src="resources/img/skin lifting.png" alt="Skin Lifting Tool Logo">
+            <p>SKIN LIFTING TOOL</p>
+        </div>
+        <!-- Add similar blocks for other specialties -->
+    </div>
+
+
+    <div class="services-wrapper">
+        <div class="our-services-header">Our Services</div>
+        <ul class="services-list">
+            <li>Advance Hair Cutting & Styling</li>
+            <li>Hair Colouring</li>
+            <li>Hair Spa & Treatments</li>
+            <li>Manicure, Pedicure</li>
+            <li>Makeup & Makeover</li>
+            <li>Waxing</li>
+            <li>Facial</li>
+            <li>Cosmetics</li>
+        </ul>
+    </div>
+
+    <div class="footer-wrapper">
+        <div class="contact-info">
+            <div class="contact-details">
+                <p>Email: bookappointment@caybeauty.in</p>
+                <p>Phone: 8618681200, 7676306766</p>
+                <p>Website: www.caybeauty.in</p>
+                <p>Address: Shop No-1 First floor, No, 75/2, Balappa Building, Itanguru Road, Sarjapura, Anekal Taluk, Bangalore- 562125</p>
+            </div>
+
+            <!-- Hours Information -->
+            <div class="hours-info">
+                <p>Hours:</p>
+                <ul>
+                    <li>Monday: Closed</li>
+                    <li>Tuesday: 9am-7pm</li>
+                    <li>Wednesday: 12pm-9pm</li>
+                    <li>Thursday: 10am-7pm</li>
+                    <li>Friday: 9am-6pm</li>
+                    <li>Saturday: 10am-4pm</li>
+                    <li>Sunday: Closed</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
